@@ -13,6 +13,11 @@ Build a serverless, progressive web application (PWA) with React using a test-dr
 - Display Charts Visualizing Event Data
 
 
+## Use of Serverless Function in the Meet App
+
+- The Meet App can use serverless functions for event notifications, real-time data processing, user authentication, event recommendations, , and scalability. By leveraging serverless technology, the app can efficiently handle backend processes, provide personalized experiences, and scale according to user demand.
+
+
 ## user stories and features
 
 FEATURE 1: FILTER EVENTS BY CITY
@@ -75,7 +80,7 @@ As a user, I should be able to get events information when offline, that was fet
   - **Given** the user has no internet connection, 
     **when** the user is accessing the app, 
     **then** cached data, stored inside the app, will be provided to the user.
-    
+
 - **Scenario 2:** Show error when user changes the settings (city, time range).
   - **Given** the user has no internet connection, 
     **when** the user is trying to access new event information (change the city, etc.), 
