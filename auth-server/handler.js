@@ -54,9 +54,6 @@ return new Promise((resolve, reject) => {
   .catch((error) => {
     return {
       statusCode: 500,
-      headers: {
-        'Access-Control-Allow-Origin': '*',
-      },
       body: JSON.stringify(error),
     };
   });
@@ -74,7 +71,7 @@ module.exports.getCalendarEvents = async (event) => {
         auth: oAuth2Client,
         timeMin: new Date().toISOString(),
         singleEvents: true,
-        orderBy: 'startTime',
+        orderBy: "startTime",
       },
       (error, response) => {
         if (error) {
@@ -98,9 +95,6 @@ module.exports.getCalendarEvents = async (event) => {
   .catch((error) => {
     return {
       statusCode: 500,
-      headers: {
-        'Access-Control-Allow-Origin': '*',
-      },
       body: JSON.stringify(error),
     };
   });
