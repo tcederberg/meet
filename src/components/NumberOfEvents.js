@@ -5,5 +5,4 @@ const NumberOfEvents = () => {
       </div>
     );
   };
-  
   export default NumberOfEvents;
